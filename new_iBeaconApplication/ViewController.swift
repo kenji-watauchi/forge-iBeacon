@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import CoreLocation
+//これ以下は残してていいのか？わからん・・・
+
 
 class ViewController: UIViewController {
+    
+    @IBAction func unwindToTop(segue: UIStoryboardSegue) {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
