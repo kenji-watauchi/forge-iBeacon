@@ -14,6 +14,8 @@
 		9E0405AA1A100620007DFF48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0405A91A100620007DFF48 /* Images.xcassets */; };
 		9E0405AD1A100620007DFF48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0405AB1A100620007DFF48 /* LaunchScreen.xib */; };
 		9E0405B91A100620007DFF48 /* new_iBeaconApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0405B81A100620007DFF48 /* new_iBeaconApplicationTests.swift */; };
+		9E71A50C1A10CD37009F6C94 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E71A50B1A10CD37009F6C94 /* ViewController2.swift */; };
+		9E71A50E1A10D074009F6C94 /* ViewController-table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E71A50D1A10D074009F6C94 /* ViewController-table.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		9E0405B21A100620007DFF48 /* new_iBeaconApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = new_iBeaconApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0405B71A100620007DFF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E0405B81A100620007DFF48 /* new_iBeaconApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = new_iBeaconApplicationTests.swift; sourceTree = "<group>"; };
+		9E71A50B1A10CD37009F6C94 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		9E71A50D1A10D074009F6C94 /* ViewController-table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController-table.swift"; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,9 @@
 			children = (
 				9E04059F1A10061F007DFF48 /* AppDelegate.swift */,
 				9E0405A41A100620007DFF48 /* ViewController.swift */,
+				9E71A50B1A10CD37009F6C94 /* ViewController2.swift */,
 				9E0405A61A100620007DFF48 /* Main.storyboard */,
+				9E71A50D1A10D074009F6C94 /* ViewController-table.swift */,
 				9E0405A91A100620007DFF48 /* Images.xcassets */,
 				9E0405AB1A100620007DFF48 /* LaunchScreen.xib */,
 				9E0405A11A100620007DFF48 /* new_iBeaconApplication.xcdatamodeld */,
@@ -216,7 +222,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E0405A51A100620007DFF48 /* ViewController.swift in Sources */,
+				9E71A50C1A10CD37009F6C94 /* ViewController2.swift in Sources */,
 				9E0405A01A10061F007DFF48 /* AppDelegate.swift in Sources */,
+				9E71A50E1A10D074009F6C94 /* ViewController-table.swift in Sources */,
 				9E0405A31A100620007DFF48 /* new_iBeaconApplication.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +417,7 @@
 				9E0405BE1A100620007DFF48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E0405BF1A100620007DFF48 /* Build configuration list for PBXNativeTarget "new_iBeaconApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				9E0405C11A100620007DFF48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AC6DB7DD-F37D-4B19-B16B-B7C99CCA24D2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>My Task List</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B74EE977EF0E69AFD44FEAB8AE447D641BE3E6A4</key>
+		<string>github.com:kiiita/ToDoList_Swift.git</string>
+		<key>EE74AA9B62BBEE2CF30898055270219BAB34AEAC</key>
+		<string>github.com:kenji-watauchi/forge-iBeacon.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>My Task List.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B74EE977EF0E69AFD44FEAB8AE447D641BE3E6A4</key>
+		<string>../..</string>
+		<key>EE74AA9B62BBEE2CF30898055270219BAB34AEAC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:kiiita/ToDoList_Swift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B74EE977EF0E69AFD44FEAB8AE447D641BE3E6A4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EE74AA9B62BBEE2CF30898055270219BAB34AEAC</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B74EE977EF0E69AFD44FEAB8AE447D641BE3E6A4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ToDoList_Swift</string>
+		</dict>
+	</array>
+</dict>
+</plist>

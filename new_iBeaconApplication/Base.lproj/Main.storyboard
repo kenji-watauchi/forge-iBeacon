@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,11 +15,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAj-Yg-TUj">
-                                <rect key="frame" x="135" y="285" width="330" height="30"/>
+                                <rect key="frame" x="23" y="319" width="330" height="30"/>
                                 <state key="normal" title="お出かけ前の最終チェック！持ち物リストを表示">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,34 +37,68 @@
                             <constraint firstAttribute="centerX" secondItem="XAj-Yg-TUj" secondAttribute="centerX" id="mhB-vt-6Ve"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-74" y="79"/>
+            <point key="canvasLocation" x="486" y="-197"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="sA8-rr-hWG">
             <objects>
-                <viewController id="dAO-GB-q80" sceneMemberID="viewController">
+                <viewController id="dAO-GB-q80" customClass="ViewController_table" customModule="new_iBeaconApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tJo-0g-dx7"/>
                         <viewControllerLayoutGuide type="bottom" id="1nR-ch-49T"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fbH-bJ-sZp">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sws-Fs-1Oa">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="561"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sws-Fs-1Oa">
+                                <rect key="frame" x="-26" y="134" width="427" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sws-Fs-1Oa" secondAttribute="height" multiplier="200:187" id="2vp-WP-cA9"/>
+                                    <constraint firstAttribute="width" constant="200" id="dTS-YP-rH0"/>
+                                    <constraint firstAttribute="height" constant="400" id="wTj-ie-5Cv"/>
+                                </constraints>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usM-5W-UAK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="Xeo-ds-JeV"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ia-GF-VdP">
+                                <rect key="frame" x="293" y="64" width="66" height="30"/>
+                                <state key="normal" title="show List">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openlist:" destination="dAO-GB-q80" eventType="touchUpInside" id="9rE-uc-AIr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="usM-5W-UAK" secondAttribute="trailing" constant="-16" id="6wR-ve-ULw"/>
+                            <constraint firstItem="usM-5W-UAK" firstAttribute="leading" secondItem="fbH-bJ-sZp" secondAttribute="leadingMargin" constant="-16" id="RhC-Sg-7Kx"/>
+                            <constraint firstAttribute="centerY" secondItem="sws-Fs-1Oa" secondAttribute="centerY" id="gh5-Zj-1lS"/>
+                            <constraint firstAttribute="centerX" secondItem="usM-5W-UAK" secondAttribute="centerX" id="iWF-4I-vV3"/>
+                            <constraint firstAttribute="centerX" secondItem="sws-Fs-1Oa" secondAttribute="centerX" id="jou-Zr-bfB"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="mPB-DM-kyO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="showList" destination="6Ia-GF-VdP" id="OHq-JE-hT3"/>
+                        <outlet property="table_views" destination="sws-Fs-1Oa" id="EAD-rB-dNi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P3h-9U-jNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="596" y="100"/>
+            <point key="canvasLocation" x="903.5" y="-67.5"/>
         </scene>
     </scenes>
 </document>
